@@ -32,7 +32,7 @@
 
         /* ===== PRELOADER ===== */
         .preloader {
-            poDianaon: fixed;
+            position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background: var(--dark);
@@ -40,7 +40,7 @@
             align-items: center;
             justify-content: center;
             z-index: 9999;
-            tranDianaon: opacity 1s ease, visibility 1s ease;
+            transition: opacity 1s ease, visibility 1s ease;
         }
 
         .preloader.hidden {
@@ -73,7 +73,7 @@
 
         /* ===== SLIDESHOW CONTAINER ===== */
         .slideshow {
-            poDianaon: relative;
+            position: relative;
             width: 100vw;
             height: 100vh;
             overflow: hidden;
@@ -81,7 +81,7 @@
 
         /* ===== PARTICLES ===== */
         .particles-container {
-            poDianaon: fixed;
+            position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
             pointer-events: none;
@@ -89,7 +89,7 @@
         }
 
         .particle {
-            poDianaon: absolute;
+            position: absolute;
             background: var(--gold);
             border-radius: 50%;
             opacity: 0;
@@ -111,7 +111,7 @@
 
         /* ===== SLIDE BASE ===== */
         .slide {
-            poDianaon: absolute;
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             display: flex;
@@ -119,7 +119,7 @@
             justify-content: center;
             opacity: 0;
             visibility: hidden;
-            tranDianaon: opacity 1.5s ease, visibility 1.5s ease;
+            transition: opacity 1.5s ease, visibility 1.5s ease;
         }
 
         .slide.active {
@@ -131,19 +131,19 @@
         .slide-opening {
             background: linear-gradient(135deg, #1a0f0a 0%, #2C1810 30%, #1a0f0a 70%, #0d0805 100%);
             flex-direction: column;
-            poDianaon: relative;
+            position: relative;
         }
 
         .slide-opening::before {
             content: '';
-            poDianaon: absolute;
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background: radial-gradient(ellipse at center, rgba(212,168,83,0.1) 0%, transparent 70%);
         }
 
         .ornament-top, .ornament-bottom {
-            poDianaon: absolute;
+            position: absolute;
             width: 300px;
             height: 150px;
             opacity: 0.3;
@@ -239,17 +239,17 @@
         }
 
         .photo-bg {
-            poDianaon: absolute;
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background-size: cover;
-            background-poDianaon: center;
+            background-position: center;
             filter: blur(20px) brightness(0.3);
             transform: scale(1.1);
         }
 
         .photo-layout {
-            poDianaon: relative;
+            position: relative;
             width: 100%;
             height: 100%;
             display: flex;
@@ -265,7 +265,7 @@
         .photo-frame-full {
             width: 85%;
             height: 80%;
-            poDianaon: relative;
+            position: relative;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0,0,0,0.5);
@@ -278,7 +278,7 @@
         }
 
         .photo-overlay-text {
-            poDianaon: absolute;
+            position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
@@ -308,7 +308,7 @@
         .split-photo {
             width: 55%;
             height: 100%;
-            poDianaon: relative;
+            position: relative;
             overflow: hidden;
         }
 
@@ -327,12 +327,12 @@
             justify-content: center;
             padding: 3rem;
             background: var(--dark);
-            poDianaon: relative;
+            position: relative;
         }
 
         .split-text::before {
             content: '';
-            poDianaon: absolute;
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background: radial-gradient(ellipse at center, rgba(212,168,83,0.05) 0%, transparent 70%);
@@ -386,7 +386,7 @@
             width: 60%;
             max-width: 500px;
             aspect-ratio: 3/4;
-            poDianaon: relative;
+            position: relative;
             border: 2px solid var(--gold);
             padding: 8px;
             border-radius: 4px;
@@ -402,7 +402,7 @@
         .centered-frame::before,
         .centered-frame::after {
             content: '';
-            poDianaon: absolute;
+            position: absolute;
             width: 30px;
             height: 30px;
             border-color: var(--gold);
@@ -490,7 +490,7 @@
         .cinematic-wrapper {
             width: 100%;
             height: 100%;
-            poDianaon: relative;
+            position: relative;
             overflow: hidden;
         }
 
@@ -507,7 +507,7 @@
         }
 
         .cinematic-overlay {
-            poDianaon: absolute;
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background: linear-gradient(
@@ -693,19 +693,19 @@
 
         /* ===== PROGRESS BAR ===== */
         .progress-bar {
-            poDianaon: fixed;
+            position: fixed;
             bottom: 0;
             left: 0;
             height: 3px;
             background: linear-gradient(90deg, var(--gold), var(--gold-light));
             z-index: 100;
-            tranDianaon: width 0.3s linear;
+            transition: width 0.3s linear;
             box-shadow: 0 0 10px rgba(212,168,83,0.5);
         }
 
         /* ===== SLIDE COUNTER ===== */
         .slide-counter {
-            poDianaon: fixed;
+            position: fixed;
             bottom: 20px;
             right: 30px;
             z-index: 100;
@@ -719,7 +719,7 @@
 
         /* ===== NAVIGATION DOTS ===== */
         .nav-dots {
-            poDianaon: fixed;
+            position: fixed;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
@@ -736,7 +736,7 @@
             border: 1px solid var(--gold);
             background: transparent;
             cursor: pointer;
-            tranDianaon: all 0.3s ease;
+            transition: all 0.3s ease;
             padding: 0;
         }
 
@@ -748,7 +748,7 @@
 
         /* ===== CONTROL BUTTONS ===== */
         .controls {
-            poDianaon: fixed;
+            position: fixed;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
@@ -769,7 +769,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            tranDianaon: all 0.3s ease;
+            transition: all 0.3s ease;
             font-size: 1rem;
             backdrop-filter: blur(10px);
         }
@@ -787,7 +787,7 @@
 
         /* ===== FALLING PETALS ===== */
         .petal {
-            poDianaon: fixed;
+            position: fixed;
             top: -20px;
             width: 15px;
             height: 15px;
@@ -838,8 +838,8 @@
         }
 
         @keyframes shimmer {
-            0% { background-poDianaon: -200% center; }
-            100% { background-poDianaon: 200% center; }
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
         }
 
         .shimmer-text {
@@ -1192,7 +1192,7 @@
                     <div class="timeline-desc">Menikah</div>
                 </div>
             </div>
-    </div>
+        </div>
 
         <!-- SLIDE 8: Another Photo -->
         <div class="slide slide-photo" data-slide="7">
@@ -1213,7 +1213,7 @@
                 <div class="closing-rings">💍</div>
                 <div class="closing-thankyou shimmer-text">Thank You</div>
                 <div class="closing-names">Taufik & Diana</div>
-                <div class="closing-hashtag">#TaufikDianaForever</div>
+                <div class="closing-hashtag">#AhmadSitiForever</div>
             </div>
         </div>
 
@@ -1238,7 +1238,7 @@
     <script>
         // ===== CONFIGURATION =====
         const SLIDE_DURATION = 7000; // 7 seconds per slide
-        const TRANDianaON_DURATION = 1500;
+        const TRANSITION_DURATION = 1500;
 
         // ===== STATE =====
         let currentSlide = 0;
@@ -1295,7 +1295,7 @@
                     photo.style.opacity = '0';
                     photo.style.transform = i === 0 ? 'translateX(-50px)' : 'translateX(50px)';
                     setTimeout(() => {
-                        photo.style.tranDianaon = 'all 1s ease';
+                        photo.style.transition = 'all 1s ease';
                         photo.style.opacity = '1';
                         photo.style.transform = 'translateX(0)';
                     }, 500 + (i * 300));
@@ -1493,9 +1493,9 @@
             counter.style.opacity = '0.15';
         }
 
-        controls.style.tranDianaon = 'opacity 0.5s ease';
-        navDots.style.tranDianaon = 'opacity 0.5s ease';
-        counter.style.tranDianaon = 'opacity 0.5s ease';
+        controls.style.transition = 'opacity 0.5s ease';
+        navDots.style.transition = 'opacity 0.5s ease';
+        counter.style.transition = 'opacity 0.5s ease';
 
         document.addEventListener('mousemove', showControls);
         document.addEventListener('touchstart', showControls);
